@@ -2,12 +2,12 @@
 
 ## 1.线性表
 
-<img src=".\images\线性表.png"/>
+<img src=".\images\线性表.png/">
 
 
 ### 线性表的基本操作
 
-![线性表基本操作](D:\code_wokspace\vscode_cpp\My_Data_Structure\images\线性表基本操作.png)
+<img src=".\images\线性表基本操作.png/">
 
 ### 1.1.线性表数组实现
 

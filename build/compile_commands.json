@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/code_wokspace/vscode_cpp/My_Data_Structure/build",
+  "command": "D:\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe   -g   -o CMakeFiles\\demo1.dir\\main.c.obj   -c D:\\code_wokspace\\vscode_cpp\\My_Data_Structure\\source\\demo1\\main.c",
+  "file": "D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo1/main.c"
+}
+]

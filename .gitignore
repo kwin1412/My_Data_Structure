@@ -1,2 +1,4 @@
 # git ignore folder
 pdf/
+
+build/
