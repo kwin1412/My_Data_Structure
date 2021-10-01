@@ -1,2 +1,3 @@
 # git ignore folder
 pdf/
+.vscode/
