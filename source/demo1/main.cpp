@@ -1,9 +1,12 @@
 # include <iostream>
+#include <ctime>
+
 using namespace std;
+
 
 // elem type
 #define ElemType int
-#define MAX_SIZE 10
+#define MAX_SIZE 20
 
 typedef struct 
 {
@@ -63,8 +66,6 @@ bool ListInsert(SqList &L,int i,ElemType e)
  */
 bool ListDelete(SqList &L,int pos,ElemType &e)
 {
-      /*
-      */
       if(pos < 1 || pos>L.length)
       {
             cout << "invaild pos";
@@ -85,24 +86,50 @@ bool ListDelete(SqList &L,int pos,ElemType &e)
       return true;
 }
 
+/**
+ * @brief 查找某一个元素
+ * 
+ * @param L 
+ * @param e 
+ * @return int 0查找失败，非0查找成功
+ */
+int LocateElem(SqList &L,int e)
+{
+      for (int i = 0; i < L.length;i++)
+            if(L.data[i]==e)
+                  return i + 1;
+      return 0;
+}
+
 int main()
 {
       SqList sq;
       sq.length = 0;
-      
+      /*使用插入初始化顺序表*/
       for (int i = 0; i < MAX_SIZE;i++)
             ListInsert(sq,i+1,i+1);
 
       ListPrint(sq);
 
+      /* 删除顺序表 */
       for (int i = 1; i <= MAX_SIZE/2;i++)
       {
             ElemType e;
             ListDelete(sq,i,e);
             //cout << e << " ";
       }
-      cout << endl;
+
       ListPrint(sq);
+
+      /* 查找顺序表 */
+      int rand_num;
+      srand(time(0));
+      rand_num = rand() % MAX_SIZE + 1;
+
+      if(LocateElem(sq,rand_num)!=0)
+            cout << "locate num = " << rand_num << " 's position is " << LocateElem(sq, rand_num) << endl;
+      else
+            cout << "locate num = " << rand_num << " no found " <<endl;
       printf("build at %s", __TIME__);
       return 0;
 }
