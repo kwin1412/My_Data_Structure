@@ -1,8 +1,8 @@
-# Install script for directory: D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo1
+# Install script for directory: D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "G:/Program Files (x86)/demo1")
+  set(CMAKE_INSTALL_PREFIX "G:/Program Files (x86)/%{project_name}")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

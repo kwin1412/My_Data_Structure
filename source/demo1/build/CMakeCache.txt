@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+%{project_name}_BINARY_DIR:STATIC=D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo1/build
+
+//Value Computed by CMake
+%{project_name}_SOURCE_DIR:STATIC=D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo1
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=D:/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/addr2line.exe
 
@@ -22,7 +28,7 @@ CMAKE_AR:FILEPATH=D:/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/ar.ex
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Debug
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -107,7 +113,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=G:/Program Files (x86)/demo1
+CMAKE_INSTALL_PREFIX:PATH=G:/Program Files (x86)/%{project_name}
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=D:/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/ld.exe

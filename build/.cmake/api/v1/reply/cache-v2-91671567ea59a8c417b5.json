@@ -2,6 +2,30 @@
 	"entries" : 
 	[
 		{
+			"name" : "%{project_name}_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/code_wokspace/vscode_cpp/My_Data_Structure/build"
+		},
+		{
+			"name" : "%{project_name}_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo2"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -647,7 +671,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo1"
+			"value" : "D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo2"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -659,7 +683,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "G:/Program Files (x86)/demo1"
+			"value" : "G:/Program Files (x86)/%{project_name}"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -879,7 +903,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "demo1"
+			"value" : "demo2"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1258,7 +1282,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "demo1_BINARY_DIR",
+			"name" : "demo2_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1270,7 +1294,7 @@
 			"value" : "D:/code_wokspace/vscode_cpp/My_Data_Structure/build"
 		},
 		{
-			"name" : "demo1_SOURCE_DIR",
+			"name" : "demo2_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1279,7 +1303,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo1"
+			"value" : "D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo2"
 		}
 	],
 	"kind" : "cache",

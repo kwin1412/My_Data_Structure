@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo1/main.cpp" "D:/code_wokspace/vscode_cpp/My_Data_Structure/build/CMakeFiles/demo1.dir/main.cpp.obj"
+  "D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo2/main.cpp" "D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo2/build/CMakeFiles/demo2.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

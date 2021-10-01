@@ -34,7 +34,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.17.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.17.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.17.2/CMakeSystem.cmake"
-  "D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo1/CMakeLists.txt"
+  "D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo2/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -50,5 +50,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/demo1.dir/DependInfo.cmake"
+  "CMakeFiles/demo2.dir/DependInfo.cmake"
   )

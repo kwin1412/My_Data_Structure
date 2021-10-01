@@ -26,7 +26,7 @@
 					[
 						0
 					],
-					"name" : "demo1",
+					"name" : "demo2",
 					"targetIndexes" : 
 					[
 						0
@@ -37,9 +37,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "demo1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-demo1-Debug-4fb5404602132797804c.json",
-					"name" : "demo1",
+					"id" : "demo2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-demo2-Debug-31b2e723be05b226bc25.json",
+					"name" : "demo2",
 					"projectIndex" : 0
 				}
 			]
@@ -49,7 +49,7 @@
 	"paths" : 
 	{
 		"build" : "D:/code_wokspace/vscode_cpp/My_Data_Structure/build",
-		"source" : "D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo1"
+		"source" : "D:/code_wokspace/vscode_cpp/My_Data_Structure/source/demo2"
 	},
 	"version" : 
 	{
