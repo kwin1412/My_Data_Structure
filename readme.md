@@ -2,7 +2,8 @@
 
 ## 1.线性表
 
-![线性表](D:\code_wokspace\vscode_cpp\My_Data_Structure\images\线性表.png)
+<img src=".\images\线性表.png"/>
+
 
 ### 线性表的基本操作
 
