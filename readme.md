@@ -1,14 +1,18 @@
 # 数据结构
 
-## 1.线形表
+## 1.线性表
+
+![线性表](D:\code_wokspace\vscode_cpp\My_Data_Structure\images\线性表.png)
+
+### 线性表的基本操作
+
+![线性表基本操作](D:\code_wokspace\vscode_cpp\My_Data_Structure\images\线性表基本操作.png)
+
+### 1.1.线性表数组实现
 
 
 
-### 1.1.线形表数组实现
-
-
-
-### 1.2线形表链表实现
+### 1.2线性表链表实现
 
 #### 1.2.1单链表
 
