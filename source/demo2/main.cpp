@@ -108,6 +108,7 @@ LinkList GetElem(LinkList &L,int pos)
       }
       return r;
 }
+
 /**
  * @brief 按值查找节点
  * 
@@ -176,10 +177,33 @@ bool List_FrontInsert(LinkList &L,int pos,ElemType e)
       return true;
 }
 
-
-bool List_BackDelete(LinkList &L,int pos,ElemType &e)
+/**
+ * @brief 找到pos的位置，把数值放在e中，并删除
+ * 
+ * @param L 
+ * @param pos 
+ * @param e 
+ * @return true 
+ * @return false 
+ */
+bool List_Delete(LinkList &L,int pos,ElemType &e)
 {
+      LinkList p;
+      LinkList q;
+      if(pos == 0)
+            p = L;
+      else
+      {
+            if((p = GetElem(L, pos-1))==NULL)
+            {
+                  return false;
+            }
+      }
+      q = p->next;
+      p->next = p->next->next;
 
+      free(q);
+      return true;
 }
 
 int main()
@@ -218,6 +242,16 @@ int main()
             cout << "List_FrontInsert Elem=-1 pos=0:" << endl;
             List_Print(Head);
       }
+
+      ElemType e;
+      if( (a=List_Delete(Head,0,e)) !=false)
+      {
+            cout << "List_Delete pos=0:" << endl;
+            cout << e << endl;
+            List_Print(Head);
+      }
+
+
 
       printf("build at %s", __TIME__);
       return 0;
