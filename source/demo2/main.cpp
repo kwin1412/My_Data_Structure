@@ -17,11 +17,8 @@ void List_Print(LinkList L)
 {
       LinkList p;
       p = L->next;
-      if (p== NULL)
-      {
-            return;
-      }
-      while (p->next!=NULL)
+
+      while (p!=NULL)
       {
             cout << p->data << " ";
             p = p->next;
@@ -61,16 +58,78 @@ LinkList List_HeadInsert(LinkList &L)
 
       return L;
 }
+/**
+ * @brief 尾插法，使得插入的数据顺序排列
+ * 
+ * @param L 
+ * @return LinkList 
+ */
+LinkList List_TailInsert(LinkList &L)
+{
+      L = (LinkList)malloc(sizeof(LNode));
+      L->next = NULL;
 
+      ElemType x;
+      cin >> x;
 
+      /* s是新生成的节点，r是当前节点指针 */
+      LinkList s,r=L;
+
+      while(x!=999)
+      {
+            /* 申请一个新的节点，s*/
+            s = (LinkList)malloc(sizeof(LNode));
+            s->data = x;
+            s->next = r->next;
+            r->next = s;
+            r = s;
+            cin >> x;
+      }
+      //r->next = NULL;
+      return L;
+}
+
+/**
+ * @brief Get the Elem object
+ * 
+ * @param L 
+ * @param pos 
+ * @return LinkList 
+ */
+LinkList GetElem(LinkList &L,int pos)
+{
+      LinkList r=L;
+      ElemType x;
+      for (int i = 0; i <=pos;i++)
+      {
+            if(r==NULL)
+                  return NULL;
+            r = r->next;
+      }
+      return r;
+}
+
+LinkList LocateElem(LinkList &L)
+{
+
+}
 
 int main()
 {
       /*定义头指针*/
       LinkList Head;
-      ElemType numList[] = {1,2,3,4,5,6,7,8,9,10};
-      Head=List_HeadInsert(Head);
+
+      //Head=List_HeadInsert(Head);
+      Head=List_TailInsert(Head);
+
       List_Print(Head);
+
+      LinkList r;
+      if( (r=GetElem(Head,3)) !=NULL)
+      {
+            cout << r->data << endl;
+      }
+
       printf("build at %s", __TIME__);
       return 0;
 }
