@@ -93,7 +93,7 @@ LinkList List_TailInsert(LinkList &L)
  * @brief Get the Elem object
  * 
  * @param L 
- * @param pos 
+ * @param pos 从0开始
  * @return LinkList 
  */
 LinkList GetElem(LinkList &L,int pos)
@@ -108,8 +108,76 @@ LinkList GetElem(LinkList &L,int pos)
       }
       return r;
 }
+/**
+ * @brief 按值查找节点
+ * 
+ * @param L 
+ * @param e 
+ * @return LinkList 
+ */
+LinkList LocateElem(LinkList &L,ElemType e)
+{
+      LinkList p;
+      p = L->next;
+      while(p!=NULL)
+      {
+            if(p->data==e)
+                  return p;
+            p = p->next;
+      }
+      return NULL;
+}
 
-LinkList LocateElem(LinkList &L)
+/**
+ * @brief 在节点pos后边插入e
+ * 
+ * @param L 
+ * @param pos 0 base
+ * @param e 
+ * @return true 
+ * @return false 
+ */
+bool List_BackInsert(LinkList &L,int pos,ElemType e)
+{
+      LinkList p;
+      p = GetElem(L,pos);
+      if(p== NULL)
+            return false;
+
+      LinkList s;
+      s = (LinkList)malloc(sizeof(LNode));
+      s->data = e;
+      s->next = p->next;
+      p->next = s;
+      return true;
+}
+
+/**
+ * @brief 在节点pos前边插入e
+ * 
+ * @param L 
+ * @param pos 0 base
+ * @param e 
+ * @return true 
+ * @return false 
+ */
+bool List_FrontInsert(LinkList &L,int pos,ElemType e)
+{
+      LinkList p;
+      p = GetElem(L,pos-1);
+      if(p== NULL)
+            return false;
+
+      LinkList s;
+      s = (LinkList)malloc(sizeof(LNode));
+      s->data = e;
+      s->next = p->next;
+      p->next = s;
+      return true;
+}
+
+
+bool List_BackDelete(LinkList &L,int pos,ElemType &e)
 {
 
 }
@@ -122,12 +190,33 @@ int main()
       //Head=List_HeadInsert(Head);
       Head=List_TailInsert(Head);
 
+      cout << "input linklist:" << endl;
       List_Print(Head);
 
       LinkList r;
       if( (r=GetElem(Head,3)) !=NULL)
       {
+            cout << "input linklist pos=3 data=:" << endl;
             cout << r->data << endl;
+      }
+
+      if( (r=LocateElem(Head,1)) !=NULL)
+      {
+            cout << "input linklist Elem=1 pos=:" << endl;
+            cout << r->data << endl;
+      }
+
+      bool a;
+      if( (a=List_BackInsert(Head,3,0)) !=false)
+      {
+            cout << "List_BackInsert Elem=0 pos=3:" << endl;
+            List_Print(Head);
+      }
+
+      if( (a=List_FrontInsert(Head,0,-1)) !=false)
+      {
+            cout << "List_FrontInsert Elem=-1 pos=0:" << endl;
+            List_Print(Head);
       }
 
       printf("build at %s", __TIME__);
