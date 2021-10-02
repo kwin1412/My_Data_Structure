@@ -58,6 +58,7 @@ LinkList List_HeadInsert(LinkList &L)
 
       return L;
 }
+
 /**
  * @brief 尾插法，使得插入的数据顺序排列
  * 
