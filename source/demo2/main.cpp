@@ -207,6 +207,20 @@ bool List_Delete(LinkList &L,int pos,ElemType &e)
       return true;
 }
 
+
+int List_GetLength(LinkList &L)
+{
+      int count = 0;
+      LinkList p;
+      p = L->next;
+      while(p!=NULL)
+      {
+            count++;
+            p = p->next;
+      }
+      return count;
+}
+
 int main()
 {
       /*定义头指针*/
@@ -252,7 +266,7 @@ int main()
             List_Print(Head);
       }
 
-
+      cout << List_GetLength(Head) << endl;
 
       printf("build at %s", __TIME__);
       return 0;
