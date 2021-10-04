@@ -2,18 +2,20 @@
 
 ## 1.线性表
 
-![线性表](线性表.png)
+![线性表](readme.assets/线性表.png)
 
 
 ### 线性表的基本操作
 
-![线性表基本操作](线性表基本操作.png)
+![线性表基本操作](readme.assets/线性表基本操作.png)
 
 ### 线性表数组实现
 
-
+demo1
 
 ### 线性表链表实现
+
+demo2
 
 ```C++
 /* 链表结构体 */
@@ -108,6 +110,8 @@ LinkList List_TailInsert(LinkList &L)
 
 #### 双链表
 
+demo3
+
 
 #### 静态链表
 
@@ -116,6 +120,8 @@ LinkList List_TailInsert(LinkList &L)
 ## 2.栈
 
 p76
+
+![栈的基本操作](readme.assets/栈的基本操作.png)
 
 ### 2.1栈的顺序存储结构
 
