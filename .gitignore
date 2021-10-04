@@ -1,3 +1,9 @@
 # git ignore folder
 pdf/
 .vscode/
+source/demo1/build/
+source/demo2/build/
+source/demo3/build/
+source/demo4/build/
+source/demo5/build/
+source/demo6/build/
