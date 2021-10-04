@@ -1,3 +1,13 @@
+/**
+ * @file main.cpp
+ * @author your name (you@domain.com)
+ * @brief 数组栈实现
+ * @version 0.1
+ * @date 2021-10-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include <iostream>
 #define ElemType int
 

@@ -1,7 +1,7 @@
 /**
  * @file main.cpp
  * @author your name (you@domain.com)
- * @brief 双链表的相关操作
+ * @brief 双向链表的相关操作
  * @version 0.1
  * @date 2021-10-04
  * 
